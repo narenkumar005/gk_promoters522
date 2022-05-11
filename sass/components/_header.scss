@@ -1,0 +1,84 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  margin: 0 auto;
+  border-bottom: 2px solid $color-black;
+}
+
+.heading {
+  margin-left: 15vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-white;
+  align-items: center;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  color: $color-blue;
+  letter-spacing: 1.2;
+  font-weight: 900;
+  padding: 0.5% 2%;
+  font-size: calc($font-size * 2);
+  background-color: $color-white;
+  margin-bottom: 0;
+}
+
+.heading h1 sup {
+  background-color: $color-white;
+}
+
+.heading p {
+  background-color: $color-white;
+  color: $color-black;
+  font-weight: bold;
+  margin-right: 16vw;
+}
+
+.heading p .header-icon::before,
+.heading p .header-icon {
+  background-color: $color-white;
+  margin-right: 5px;
+  color: green;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: calc($font-size * 3);
+  padding: 0 $font-size;
+  margin-right: 15vw;
+}
+.navbar h3 {
+  font-size: $font-size;
+  font-weight: bold;
+}
+
+.navbar h3 {
+  position: relative;
+}
+
+.navbar h3:hover {
+  cursor: pointer;
+}
+
+.navbar h3:hover::after {
+  content: "";
+  width: 105%;
+  height: 4px;
+  background-color: goldenrod;
+
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  // transition: all 0.2s;
+  animation: hover-header 0.2s ease-out;
+}

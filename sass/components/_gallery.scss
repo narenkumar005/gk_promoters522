@@ -1,0 +1,77 @@
+.image__gallery {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  .column {
+    width: 33.33vw;
+    height: 45vh;
+    overflow: hidden;
+    .column-inner {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+          to right,
+          rgba($color-black, 0.4),
+          rgba($color-black, 0.4)
+        ),
+        url("/carousel1.png");
+      background-position: center;
+      background-size: cover;
+      transition: all 0.2s;
+    }
+
+    &:hover .column-inner {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.image__gallery .column .column-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel2.jpeg");
+}
+.image__gallery .column .column-2 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel1.png");
+}
+.image__gallery .column .column-3 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel3.jpeg");
+}
+.image__gallery .column .column-4 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel1.png");
+}
+.image__gallery .column .column-5 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel2.jpeg");
+}
+.image__gallery .column .column-6 {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url("/carousel3.jpeg");
+}

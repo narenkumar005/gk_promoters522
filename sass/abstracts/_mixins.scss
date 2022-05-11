@@ -1,0 +1,18 @@
+@mixin back-trans {
+  background-color: transparent;
+  h3 {
+    background-color: transparent;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 0.8rem;
+  }
+  p {
+    background-color: transparent;
+    align-self: flex-end;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+}

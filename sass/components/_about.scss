@@ -1,0 +1,98 @@
+.about {
+  display: flex;
+  width: 100vw;
+  height: 55vh;
+  padding: 0 8vw 0 10vw;
+  margin-top: 14vh;
+  margin-bottom: 2vh;
+
+  &__left {
+    flex: 2;
+    display: flex;
+    margin-right: 3rem;
+    &--experience {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-gold;
+      color: $color-black;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+
+      width: 30%;
+      margin: 0 4rem 0 2rem;
+      padding: 0.4rem;
+
+      h3 {
+        font-size: calc($font-size * 7);
+        font-weight: bolder;
+        background-color: transparent;
+      }
+
+      h4 {
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: calc($font-size * 1);
+        font-size: calc($font-size * 1.8);
+      }
+
+      p {
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: calc($font-size * 0.5);
+        font-size: calc($font-size * 1.4);
+      }
+    }
+    &--motto {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+      height: 60%;
+      width: 120%;
+      margin-left: calc($font-size * 2);
+
+      h3 {
+        font-weight: 400;
+        letter-spacing: calc($font-size * 1.2);
+        color: lightgray;
+        text-transform: uppercase;
+        font-size: calc($font-size * 1.1);
+        text-align: left;
+      }
+
+      .light {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: calc($font-size * 3.5);
+        letter-spacing: calc($font-size * 0.1);
+        text-align: left;
+        margin-bottom: 0;
+        line-height: 4rem;
+      }
+
+      .bold {
+        text-transform: uppercase;
+        font-size: calc($font-size * 3.5);
+        letter-spacing: calc($font-size * 0.1);
+        text-align: left;
+        line-height: 4rem;
+        font-weight: bold;
+      }
+    }
+  }
+  &__right {
+    flex: 1.3;
+
+    p {
+      line-height: 1.8rem;
+      font-weight: 200;
+      text-align: justify;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}

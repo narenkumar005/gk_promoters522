@@ -1,0 +1,22 @@
+.know-more {
+  width: 100vw;
+  padding: 0 8vw 0 10vw;
+  height: 10vh;
+  position: relative;
+
+  a {
+    background-color: $color-gold;
+    color: $color-black;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: absolute;
+    right: 8vw;
+    bottom: 0;
+
+    &:hover {
+      background-color: $color-white;
+      border: 2px solid $color-gold;
+    }
+  }
+}

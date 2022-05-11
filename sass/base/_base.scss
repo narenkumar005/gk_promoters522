@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: $font-size;
+  background-color: $background-color-main;
+  //overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
